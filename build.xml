@@ -3,9 +3,9 @@
   <scriptdef name="jsvalidate" language="javascript">
     <element name="fileset" type="fileset"/>
     <![CDATA[
-importClass(java.io.File);
-importClass(java.io.FileReader);
-importClass(java.io.BufferedReader);
+var File = Java.type('java.io.File');
+var FileReader = Java.type('java.io.FileReader');
+var BufferedReader = Java.type('java.io.BufferedReader');
 
 var failures = 0;
 
